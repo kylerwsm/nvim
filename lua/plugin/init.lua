@@ -1,0 +1,12 @@
+require("lazy").setup({
+	require("plugin.nvimtree"),
+	require("plugin.lspconfig"),
+	require("plugin.cmp"),
+	require("plugin.treesitter"),
+	require("plugin.mason"),
+	require("plugin.conform"),
+	require("plugin.toggleterm"),
+	require("plugin.telescope"),
+	require("plugin.fugitive"),
+	require("plugin.catppuccin"),
+})

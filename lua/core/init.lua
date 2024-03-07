@@ -26,4 +26,4 @@ vim.opt.ruler = false
 -- disable nvim intro
 vim.opt.shortmess:append("sI")
 
-require("core.mappings")
+require("core.mapping")
