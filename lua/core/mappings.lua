@@ -17,7 +17,7 @@ vim.keymap.set("n", "<leader>fm", function()
 end, { desc = "LSP formatting" })
 
 -- Toggle term
-vim.keymap.set({ "t", "n" }, "<C-i>", "<cmd>ToggleTerm<CR>", { desc = "Toggle floating term" })
+vim.keymap.set("n", "<C-i>", "<cmd>ToggleTerm<CR>", { desc = "Toggle floating term" })
 vim.keymap.set("t", "<Esc>", "<cmd>ToggleTerm<CR>", { desc = "Toggle floating term" })
 
 -- Nvim-tree
