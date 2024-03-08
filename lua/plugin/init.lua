@@ -7,6 +7,5 @@ require("lazy").setup({
 	require("plugin.conform"),
 	require("plugin.toggleterm"),
 	require("plugin.telescope"),
-	require("plugin.fugitive"),
 	require("plugin.catppuccin"),
 })
