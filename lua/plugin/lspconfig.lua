@@ -17,6 +17,7 @@ return {
 		lspconfig.gopls.setup({
 			settings = {
 				gopls = {
+					gofumpt = true,
 					completeUnimported = true,
 					usePlaceholders = true,
 					analyses = {
