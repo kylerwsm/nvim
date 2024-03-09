@@ -1,3 +1,5 @@
+local defaultLspTable = { "pyright", "jsonls", "terraformls", "rust_analyzer" }
+
 return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
@@ -27,6 +29,8 @@ return {
 			},
 		})
 
-		lspconfig.pyright.setup({})
+		for _, defaultLsp in pairs(defaultLspTable) do
+			lspconfig[defaultLsp].setup({})
+		end
 	end,
 }
