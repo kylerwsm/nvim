@@ -1,9 +1,9 @@
-vim.opt.scrolloff = 999 -- center cursor in window
+vim.opt.scrolloff = 999           -- center cursor in window
 vim.opt.clipboard = "unnamedplus" -- use system clipboard
-vim.opt.cursorline = true -- highlight the current line
-vim.opt.showtabline = 0 -- always show tabs
+vim.opt.cursorline = true         -- highlight the current line
+vim.opt.showtabline = 0           -- always show tabs
 
-vim.opt.laststatus = 3 -- global statusline
+vim.opt.laststatus = 3            -- global statusline
 vim.opt.showmode = false
 
 -- Indenting
@@ -26,4 +26,5 @@ vim.opt.ruler = false
 -- disable nvim intro
 vim.opt.shortmess:append("sI")
 
+require("core.plugin")
 require("core.mapping")
