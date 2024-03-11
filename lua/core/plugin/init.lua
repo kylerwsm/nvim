@@ -7,6 +7,6 @@ require("lazy").setup({
   require("core.plugin.conform"),
   require("core.plugin.toggleterm"),
   require("core.plugin.telescope"),
-  require("core.plugin.catppuccin"),
+  require("core.plugin.theme"),
   require("core.plugin.whichkey"),
 })
