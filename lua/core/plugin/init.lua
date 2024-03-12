@@ -9,4 +9,7 @@ require("lazy").setup({
   require("core.plugin.telescope"),
   require("core.plugin.theme"),
   require("core.plugin.whichkey"),
+  require("core.plugin.gitsigns"),
+  require("core.plugin.illuminate"),
+  require("core.plugin.comment"),
 })
