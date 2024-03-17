@@ -23,7 +23,7 @@ end, { desc = "LSP formatting" })
 map("n", "<leader>b", "<cmd>enew<CR>", { desc = "Buffer New" })
 map("n", "<tab>", "<cmd>bnext<CR>", { desc = "Buffer Goto next" })
 map("n", "<S-tab>", "<cmd>bprevious<CR>", { desc = "Buffer Goto prev" })
-map("n", "<leader>x", "<cmd>bdelete<CR>", { desc = "Buffer Close" })
+map("n", "<leader>x", "<cmd>Bdelete<CR>", { desc = "Buffer Close" })
 
 require("core.mapping.telescope")
 require("core.mapping.lspconfig")
