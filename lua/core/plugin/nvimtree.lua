@@ -7,8 +7,9 @@ local opts = {
 	},
 
 	view = {
+		adaptive_size = true,
 		float = {
-			enable = true,
+			enable = false,
 
 			open_win_config = function()
 				local screen_w = vim.opt.columns:get()
