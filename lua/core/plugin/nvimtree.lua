@@ -8,7 +8,7 @@ local opts = {
 
 	view = {
 		adaptive_size = true,
-		--[[ float = {
+		float = {
 			enable = true,
 
 			open_win_config = function()
@@ -29,7 +29,7 @@ local opts = {
 					height = window_h_int,
 				}
 			end,
-		}, ]]
+		},
 	},
 
 	renderer = {
