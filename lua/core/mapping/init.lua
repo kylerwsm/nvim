@@ -17,12 +17,10 @@ map("n", "<C-k>", "<C-w>k", { desc = "Window up" })
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle nvimtree" })
 
 map("n", "<leader>fm", function()
-	require("conform").format()
+  require("conform").format()
 end, { desc = "LSP formatting" })
 
 map("n", "<leader>b", "<cmd>enew<CR>", { desc = "Buffer New" })
-map("n", "<tab>", "<cmd>bnext<CR>", { desc = "Buffer Goto next" })
-map("n", "<S-tab>", "<cmd>bprevious<CR>", { desc = "Buffer Goto prev" })
 map("n", "<leader>x", "<cmd>Bdelete<CR>", { desc = "Buffer Close" })
 
 require("core.mapping.telescope")
