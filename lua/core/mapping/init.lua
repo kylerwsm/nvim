@@ -17,11 +17,13 @@ map("n", "<C-k>", "<C-w>k", { desc = "Window up" })
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle nvimtree" })
 
 map("n", "<leader>fm", function()
-  require("conform").format()
+	require("conform").format()
 end, { desc = "LSP formatting" })
 
 map("n", "<leader>x", "<cmd>Bdelete<CR>", { desc = "Buffer Close" })
 vim.keymap.set("n", "<leader>b", "<cmd>BufferLinePick<CR>", { desc = "Buffer picker" })
+vim.keymap.set("n", "]b", "<cmd>bnext<CR>", { desc = "Buffer next" })
+vim.keymap.set("n", "[b", "<cmd>bprevious<CR>", { desc = "Buffer previous" })
 
 require("core.mapping.telescope")
 require("core.mapping.lspconfig")
