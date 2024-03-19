@@ -18,4 +18,5 @@ require("lazy").setup({
   require("core.plugin.todocomments"),
   require("core.plugin.harpoon"),
   require("core.plugin.go"),
+  require("core.plugin.copilot"),
 })
