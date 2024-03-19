@@ -20,8 +20,8 @@ map("n", "<leader>fm", function()
   require("conform").format()
 end, { desc = "LSP formatting" })
 
-map("n", "<leader>b", "<cmd>enew<CR>", { desc = "Buffer New" })
 map("n", "<leader>x", "<cmd>Bdelete<CR>", { desc = "Buffer Close" })
+vim.keymap.set("n", "<leader>b", "<cmd>BufferLinePick<CR>", { desc = "Buffer picker" })
 
 require("core.mapping.telescope")
 require("core.mapping.lspconfig")
