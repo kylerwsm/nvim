@@ -13,5 +13,6 @@ require("lazy").setup({
   require("core.plugin.illuminate"),
   require("core.plugin.comment"),
   require("core.plugin.bufdelete"),
-  require("core.plugin.bufferline")
+  require("core.plugin.bufferline"),
+  require("core.plugin.fidget"),
 })
