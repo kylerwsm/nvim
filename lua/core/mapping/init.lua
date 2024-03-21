@@ -20,7 +20,7 @@ map("n", "<leader>fm", function()
 	require("conform").format()
 end, { desc = "LSP formatting" })
 
-map("n", "<leader>x", "<cmd>BufferLinePickClose<CR>", { desc = "Buffer delete" })
+map("n", "<leader>x", "<cmd>Bdelete<CR>", { desc = "Buffer delete" })
 map("n", "<leader>b", "<cmd>BufferLinePick<CR>", { desc = "Buffer picker" })
 map("n", "<leader>n", "<cmd>BufferLineCycleNext<CR>", { desc = "Buffer next" })
 map("n", "<leader>p", "<cmd>BufferLineCyclePrev<CR>", { desc = "Buffer previous" })
