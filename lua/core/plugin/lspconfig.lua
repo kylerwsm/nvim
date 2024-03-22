@@ -4,6 +4,28 @@ local defaultLspTable =
 return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
+	keys = {
+		{
+			"<space>d",
+			vim.diagnostic.open_float,
+			desc = "Show diagnostic float",
+		},
+		{
+			"[d",
+			vim.diagnostic.goto_prev,
+			desc = "Show previous diagnostic",
+		},
+		{
+			"d]",
+			vim.diagnostic.goto_next,
+			desc = "Show next diagnostic",
+		},
+		{
+			"<leader>q",
+			vim.diagnostic.setloclist,
+			desc = "Show diagnostic location list",
+		},
+	},
 	config = function()
 		local lspconfig = require("lspconfig")
 

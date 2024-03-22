@@ -16,4 +16,5 @@ require("lazy").setup({
 	require("core.plugin.bufferline"),
 	require("core.plugin.fidget"),
 	require("core.plugin.todocomments"),
+	require("core.plugin.harpoon"),
 })

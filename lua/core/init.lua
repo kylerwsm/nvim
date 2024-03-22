@@ -1,9 +1,11 @@
-vim.opt.scrolloff = 999           -- center cursor in window
-vim.opt.clipboard = "unnamedplus" -- use system clipboard
-vim.opt.cursorline = true         -- highlight the current line
-vim.opt.showtabline = 0           -- always show tabs
+vim.g.mapleader = " "
 
-vim.opt.laststatus = 3            -- global statusline
+vim.opt.scrolloff = 999 -- center cursor in window
+vim.opt.clipboard = "unnamedplus" -- use system clipboard
+vim.opt.cursorline = true -- highlight the current line
+vim.opt.showtabline = 0 -- always show tabs
+
+vim.opt.laststatus = 3 -- global statusline
 vim.opt.showmode = false
 
 -- Indenting
