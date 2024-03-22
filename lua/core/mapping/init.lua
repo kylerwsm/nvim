@@ -2,6 +2,7 @@ local map = vim.keymap.set
 
 vim.g.mapleader = " "
 
+map("n", "<C-i>", "<C-i>", { desc = "Decouple with tab" })
 map("n", "<Esc>", "<cmd>noh<CR>", { desc = "Clear highlights" })
 
 map("i", "<C-h>", "<Left>", { desc = "Move left" })
@@ -22,8 +23,8 @@ end, { desc = "LSP formatting" })
 
 map("n", "<leader>x", "<cmd>Bdelete<CR>", { desc = "Buffer delete" })
 map("n", "<leader>b", "<cmd>BufferLinePick<CR>", { desc = "Buffer picker" })
-map("n", "<leader>n", "<cmd>BufferLineCycleNext<CR>", { desc = "Buffer next" })
-map("n", "<leader>p", "<cmd>BufferLineCyclePrev<CR>", { desc = "Buffer previous" })
+map("n", "<tab>", "<cmd>BufferLineCycleNext<CR>", { desc = "Buffer next" })
+map("n", "<S-tab>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Buffer previous" })
 
 require("core.mapping.telescope")
 require("core.mapping.lspconfig")
