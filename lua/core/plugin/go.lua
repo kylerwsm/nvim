@@ -5,8 +5,12 @@ return {
     "neovim/nvim-lspconfig",
     "nvim-treesitter/nvim-treesitter",
   },
-  config = function()
-    require("go").setup()
+  opts = {
+    lsp_document_formatting = true, -- make use of conform for formatting
+    diagnostic = false,             -- make use of lspconfig for diagnostic setup
+  },
+  config = function(_, opts)
+    require("go").setup(opts)
   end,
   event = { "CmdlineEnter" },
   ft = { "go", 'gomod' },
