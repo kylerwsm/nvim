@@ -30,3 +30,4 @@ vim.opt.shortmess:append("sI")
 
 require("core.plugin")
 require("core.mapping")
+require("core.autocmd")
